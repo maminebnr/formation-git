@@ -44,6 +44,43 @@
         </aside>
 
         <main class="content-area">
+            <section class="ga-showroom-carousel">
+                <div class="ga-slide active">
+                    <img src="https://images.unsplash.com/photo-1503376763036-066120622c74?auto=format&fit=crop&w=1200&q=80" alt="Porsche 911">
+                    <div class="ga-slide-content">
+                        <h2>2024 Porsche 911 Carrera</h2>
+                        <p>Experience the timeless design and contemporary interpretation of the 911.</p>
+                        <button class="ga-btn-primary">View Details</button>
+                    </div>
+                </div>
+
+                <div class="ga-slide">
+                    <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=1200&q=80" alt="Tesla Model S">
+                    <div class="ga-slide-content">
+                        <h2>Tesla Model S Plaid</h2>
+                        <p>Beyond Ludicrous. 0-60 mph in 1.99 seconds.</p>
+                        <button class="ga-btn-primary">View Electric</button>
+                    </div>
+                </div>
+
+                <div class="ga-slide">
+                    <img src="https://images.unsplash.com/photo-1555215695-3004980adade?auto=format&fit=crop&w=1200&q=80" alt="Mercedes AMG">
+                    <div class="ga-slide-content">
+                        <h2>Mercedes-AMG GT</h2>
+                        <p>Handcrafted by racers. A pure sports car with a V8 biturbo engine.</p>
+                        <button class="ga-btn-primary">Explore AMG</button>
+                    </div>
+                </div>
+
+                <button class="ga-carousel-btn ga-prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="ga-carousel-btn ga-next" onclick="moveSlide(1)">&#10095;</button>
+
+                <div class="ga-indicators">
+                    <span class="ga-dot active" onclick="currentSlide(1)"></span>
+                    <span class="ga-dot" onclick="currentSlide(2)"></span>
+                    <span class="ga-dot" onclick="currentSlide(3)"></span>
+                </div>
+            </section>
             <section class="placeholder-section">
                 <h1>Find Your Dream Car</h1>
                 <p>Welcome to the car catalog. (Group B will add car cards here)</p>

@@ -60,3 +60,137 @@ body { font-family: 'Inter', sans-serif; background: var(--light-bg); }
     text-align: center;
     border: 2px dashed #cbd5e1;
 }
+
+.ga-showroom-carousel {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* --- Slides --- */
+.ga-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+    display: flex;
+    align-items: flex-end; /* Puts text at the bottom */
+}
+
+.ga-slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.ga-slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Gradient Overlay to make text readable */
+.ga-slide::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    z-index: -1;
+}
+
+/* --- Slide Content --- */
+.ga-slide-content {
+    padding: 2rem;
+    color: white;
+    z-index: 2;
+    max-width: 600px;
+}
+
+.ga-slide-content h2 {
+    font-size: 2.5rem;
+    margin: 0 0 0.5rem 0;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.ga-slide-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #ddd;
+}
+
+.ga-btn-primary {
+    background-color: #e63946;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+.ga-btn-primary:hover {
+    background-color: #c1121f;
+}
+
+/* --- Controls (Arrows) --- */
+.ga-carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    backdrop-filter: blur(5px);
+    transition: background 0.3s;
+}
+
+.ga-carousel-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.ga-prev { left: 1rem; }
+.ga-next { right: 1rem; }
+
+/* --- Indicators (Dots) --- */
+.ga-indicators {
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.ga-dot {
+    width: 12px;
+    height: 12px;
+    background: rgba(255,255,255,0.4);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.ga-dot.active {
+    background: #e63946;
+    transform: scale(1.2);
+}
