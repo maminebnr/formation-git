@@ -104,6 +104,45 @@
                     </div>
                 </div>
             </section>
+            <section class="ga-feedback-section">
+                <div class="feedback-header">
+                    <h2>Client Feedback</h2>
+                    <p>Share your experience with <span>AutoPrime</span></p>
+                </div>
+
+                <div class="feedback-container">
+                    <!-- Feedback Form -->
+                    <div class="feedback-form-box">
+                        <h3>Leave a Comment</h3>
+                        <form id="feedbackForm">
+                            <div class="input-group">
+                                <input type="text" id="clientName" placeholder="Your Name" required>
+                            </div>
+                            <div class="input-group">
+                                <textarea id="clientComment" placeholder="Your Feedback" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="ga-filter-btn">Submit Feedback</button>
+                        </form>
+                    </div>
+
+                    <!-- Feedback List -->
+                    <div class="feedback-list">
+                        <h3>Latest Reviews</h3>
+                        <div class="feedback-items" id="feedbackItems">
+                            <div class="feedback-card">
+                                <div class="feedback-user">James Wilson</div>
+                                <div class="feedback-text">"The Z3Z interior view really helped me decide on my new
+                                    Alpha model. Premium service!"</div>
+                            </div>
+                            <div class="feedback-card">
+                                <div class="feedback-user">Sophia Chen</div>
+                                <div class="feedback-text">"Seamless buying process. Highly recommend the virtual
+                                    showroom."</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
     <section class="car-gallery">
@@ -164,6 +203,25 @@
 
     setInterval(updateTime, 1000);
     updateTime();
+
+    // Feedback Handling
+    document.getElementById('feedbackForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const name = document.getElementById('clientName').value;
+        const comment = document.getElementById('clientComment').value;
+
+        const feedbackContainer = document.getElementById('feedbackItems');
+        const newCard = document.createElement('div');
+        newCard.className = 'feedback-card';
+        newCard.innerHTML = `
+            <div class="feedback-user">${name}</div>
+            <div class="feedback-text">"${comment}"</div>
+        `;
+
+        feedbackContainer.prepend(newCard);
+        this.reset();
+        alert('Thank you for your feedback!');
+    });
 </script>
 
 </html>

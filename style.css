@@ -533,4 +533,108 @@ body {
     text-decoration: none;
     font-weight: 600;
 }
+
+/* CLIENT FEEDBACK SECTION */
+.ga-feedback-section {
+    margin-top: 60px;
+    padding: 60px;
+    background: linear-gradient(135deg, white 0%, #f8fafc 100%);
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.feedback-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.feedback-header h2 {
+    font-size: 2.5rem;
+    color: var(--dark-bg);
+    margin-bottom: 10px;
+}
+
+.feedback-header p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.feedback-header p span {
+    color: var(--primary);
+    font-weight: 800;
+}
+
+.feedback-container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+}
+
+.feedback-form-box h3,
+.feedback-list h3 {
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+    color: var(--dark-bg);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px var(--primary-glow);
+}
+
+.feedback-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feedback-card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    border-left: 6px solid var(--primary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease;
+}
+
+.feedback-card:hover {
+    transform: translateX(10px);
+}
+
+.feedback-user {
+    font-weight: 800;
+    color: var(--dark-bg);
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.feedback-text {
+    color: var(--text-muted);
+    line-height: 1.6;
+    font-style: italic;
+}
+
+@media (max-width: 1024px) {
+    .feedback-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
 }
