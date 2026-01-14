@@ -4,11 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Premium Car Showroom</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    
+    <section class="showroom">
+        <div class="carousel-viewport">
+            <div class="carousel-track">
+                <!-- Slide 1 -->
+                <article class="carousel-slide active">
+                    <img src="C:/Users/Clevory.CLEVORY/.gemini/antigravity/brain/234e77a9-9d4c-4c71-8382-98f4d6f39fc2/electric_supercar_front_1768387995102.png"
+                        alt="Futuristic Electric Supercar">
+                    <div class="slide-content">
+                        <h2>The Volt-X</h2>
+                        <p>Experience the pinnacle of electric performance with carbon-fiber aerodynamics and 1,800
+                            total horsepower.</p>
+                    </div>
+                </article>
+
+                <!-- Slide 2 -->
+                <article class="carousel-slide">
+                    <img src="C:/Users/Clevory.CLEVORY/.gemini/antigravity/brain/234e77a9-9d4c-4c71-8382-98f4d6f39fc2/luxury_suv_side_1768388011265.png"
+                        alt="Premium Luxury SUV">
+                    <div class="slide-content">
+                        <h2>Apex Horizon</h2>
+                        <p>Defining the new era of luxury SUVs with intelligent all-wheel drive and a sanctuary-like
+                            interior.</p>
+                    </div>
+                </article>
+
+                <!-- Slide 3 -->
+                <article class="carousel-slide">
+                    <img src="C:/Users/Clevory.CLEVORY/.gemini/antigravity/brain/234e77a9-9d4c-4c71-8382-98f4d6f39fc2/sleek_sedan_interior_1768388025204.png"
+                        alt="Futuristic Sedan Interior">
+                    <div class="slide-content">
+                        <h2>Ethereal Cabin</h2>
+                        <p>A digital haven where advanced AI meets artisanal craftsmanship. Step into the future of
+                            mobility.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="controls">
+                <button class="btn prev" id="prevBtn">←</button>
+                <button class="btn next" id="nextBtn">→</button>
+            </div>
+
+            <div class="pagination">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
