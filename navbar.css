@@ -1,0 +1,52 @@
+.ga-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+.ga-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.ga-logo .ga-text {
+    font-size: 1.5rem;
+    color: #1e293b;
+    letter-spacing: -1px;
+}
+
+.ga-logo strong { color: #2563eb; }
+
+.ga-nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.ga-nav-links a {
+    text-decoration: none;
+    color: #64748b;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.ga-nav-links a:hover { color: #2563eb; }
+
+.ga-btn-primary {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
