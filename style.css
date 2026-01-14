@@ -1,8 +1,8 @@
 /* GLOBAL SETTINGS */
 :root {
-    --primary: #2563eb;
+    --primary: #0b42ba;
     --dark: #0f172a;
-    --light-bg: #f1f5f9;
+    --light-bg: #8598aa;
     --nav-h: 70px;
     --side-w: 260px;
 }
@@ -54,7 +54,7 @@ body { font-family: 'Inter', sans-serif; background: var(--light-bg); }
 }
 
 .placeholder-section {
-    background: white;
+    background: rgb(224, 130, 181);
     padding: 50px;
     border-radius: 10px;
     text-align: center;
