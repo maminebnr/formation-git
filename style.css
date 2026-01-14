@@ -533,3 +533,9 @@ body {
     text-decoration: none;
     font-weight: 600;
 }
+
+.terms-contenta a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+}
