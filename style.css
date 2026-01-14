@@ -7,8 +7,16 @@
     --side-w: 260px;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Inter', sans-serif; background: var(--light-bg); }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--light-bg);
+}
 
 /* [GROUP A] NAVBAR STYLES */
 .ga-navbar {
@@ -20,16 +28,42 @@ body { font-family: 'Inter', sans-serif; background: var(--light-bg); }
     align-items: center;
     padding: 0 40px;
     position: fixed;
-    top: 0; width: 100%; z-index: 1000;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-.ga-logo span { color: var(--primary); font-weight: bold; }
-.ga-nav-links { display: flex; list-style: none; gap: 30px; }
-.ga-nav-links a { color: #cbd5e1; text-decoration: none; font-size: 14px; }
-.ga-btn-login { background: var(--primary); color: rgb(187, 171, 171); border: none; padding: 8px 20px; border-radius: 5px; cursor: pointer; }
+.ga-logo span {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.ga-nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.ga-nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.ga-btn-login {
+    background: var(--primary);
+    color: rgb(187, 171, 171);
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 /* [GROUP A] SIDEBAR STYLES */
-.ga-layout-wrapper { display: flex; margin-top: var(--nav-h); }
+.ga-layout-wrapper {
+    display: flex;
+    margin-top: var(--nav-h);
+}
 
 .ga-sidebar {
     width: var(--side-w);
@@ -40,11 +74,36 @@ body { font-family: 'Inter', sans-serif; background: var(--light-bg); }
     padding: 25px;
 }
 
-.ga-filter-box h3 { margin-bottom: 20px; font-size: 18px; }
-.ga-filter-item { margin-bottom: 20px; }
-.ga-filter-item label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 8px; }
-.ga-filter-item select, input[type="range"] { width: 100%; }
-.ga-filter-btn { width: 100%; background: var(--dark); color: rgb(187, 171, 171); border: none; padding: 10px; border-radius: 4px; cursor: pointer; }
+.ga-filter-box h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.ga-filter-item {
+    margin-bottom: 20px;
+}
+
+.ga-filter-item label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.ga-filter-item select,
+input[type="range"] {
+    width: 100%;
+}
+
+.ga-filter-btn {
+    width: 100%;
+    background: var(--dark);
+    color: rgb(187, 171, 171);
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
 /* MAIN CONTENT (Others work here) */
 .content-area {
