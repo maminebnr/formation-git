@@ -3,29 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoPrime - Car Sales</title>
-    
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="sidebar.css">
-    
-    <style>
-        body { margin: 0; font-family: sans-serif; display: flex; flex-direction: column; }
-        .main-container { display: flex; margin-top: 70px; } /* Space for navbar */
-        .content-area { margin-left: 250px; padding: 20px; width: 100%; } /* Space for sidebar */
-    </style>
+    <title>AutoPrime | Premium Car Dealership</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div id="navbar-placeholder">
+    <nav class="ga-navbar">
+        <div class="ga-logo">🏎️ DRIVE<span>SELECT</span></div>
+        <ul class="ga-nav-links">
+            <li><a href="#">Inventory</a></li>
+            <li><a href="#">Sell a Car</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <div class="ga-auth">
+            <button class="ga-btn-login">Client Portal</button>
         </div>
+    </nav>
 
-    <div class="main-container">
-        <div id="sidebar-placeholder">
+    <div class="ga-layout-wrapper">
+        <aside class="ga-sidebar">
+            <div class="ga-filter-box">
+                <h3>Filters</h3>
+                <div class="ga-filter-item">
+                    <label>Condition</label>
+                    <select><option>New Cars</option><option>Used Cars</option></select>
+                </div>
+                <div class="ga-filter-item">
+                    <label>Price Range</label>
+                    <input type="range" min="0" max="100">
+                </div>
+                <div class="ga-filter-item">
+                    <label>Body Type</label>
+                    <div class="ga-checks">
+                        <label><input type="checkbox"> SUV</label>
+                        <label><input type="checkbox"> Sedan</label>
+                    </div>
+                </div>
+                <button class="ga-filter-btn">Apply</button>
             </div>
+        </aside>
 
         <main class="content-area">
-            <section style="height: 2000px; background: #f0f2f5; display: flex; align-items: center; justify-content: center;">
-                <h2>Car Catalog will appear here (Group B)</h2>
+            <section class="placeholder-section">
+                <h1>Find Your Dream Car</h1>
+                <p>Welcome to the car catalog. (Group B will add car cards here)</p>
             </section>
         </main>
     </div>
