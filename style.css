@@ -70,7 +70,10 @@ body {
 .ga-btn-login:hover { background: var(--primary-hover); }
 
 /* [GROUP A] SIDEBAR STYLES */
-.ga-layout-wrapper { display: flex; margin-top: var(--nav-h); }
+.ga-layout-wrapper {
+    display: flex;
+    margin-top: var(--nav-h);
+}
 
 .ga-sidebar {
     width: var(--side-w);
