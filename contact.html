@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  <header class="contact-header">
+    <h1>Contact Us</h1>
+    <p>Choose a method below to reach us</p>
+  </header>
+
+  <section class="contact-options">
+    <div class="contact-card" data-modal="mail-modal">
+      <h3>Mail</h3>
+      <p>Click to see email details</p>
+    </div>
+    <div class="contact-card" data-modal="phone-modal">
+      <h3>Phone</h3>
+      <p>Click to see phone number</p>
+    </div>
+    <div class="contact-card" data-modal="facebook-modal">
+      <h3>Facebook</h3>
+      <p>Click to see our Facebook page</p>
+    </div>
+  </section>
+
+  <!-- Modals -->
+  <div id="mail-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Email</h2>
+      <p>You can contact us at: <strong>CarsLovers@gmail.com</strong></p>
+    </div>
+  </div>
+
+  <div id="phone-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Phone</h2>
+      <p>Call us at: <strong>+21655555555</strong></p>
+    </div>
+  </div>
+
+  <div id="facebook-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Facebook</h2>
+      <p>Visit our Facebook page: <a href="https://facebook.com/GroupeC" target="_blank">facebook.com/example</a></p>
+    </div>
+  </div>
+
+  <script src="Contact.js"></script>
+</body>
+</html>
