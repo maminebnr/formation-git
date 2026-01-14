@@ -159,7 +159,58 @@ input[type="range"] {
 }
 
 .car-card p {
+<<<<<<< HEAD
   padding: 10px;
   font-weight: bold;
   margin: 0;
+=======
+    padding: 10px;
+    font-weight: bold;
+    margin: 0;
+}
+/* --- Train Background Time Section --- */
+.train-time-section {
+    height: 400px;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 60px 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.train-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.train-overlay h2 {
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.train-time {
+    font-size: 56px;
+    font-weight: bold;
+    color: #38bdf8;
+    margin-bottom: 10px;
+    font-family: monospace;
+}
+
+.train-overlay p {
+    font-size: 14px;
+    letter-spacing: 3px;
+    opacity: 0.8;
+>>>>>>> 461746954cd61b40588601e28ebe16ee140e98fb
 }

@@ -50,6 +50,13 @@
         </aside>
 
         <main class="content-area">
+            <section class="train-time-section">
+                <div class="train-overlay">
+                    <h2>Next Journey Starts In</h2>
+                    <div class="train-time" id="trainTime">00:00:00</div>
+                    <p>Precision • Speed • Experience</p>
+                </div>
+            </section>
             <section class="premium-carousel">
                 <div class="carousel-overlay-text">
                     <h2>Z3Z Special Display</h2>
@@ -116,5 +123,15 @@
     </section>
 >>>>>>> 629b07cb4d88ef60f6743772999d1f771687a3ff
 </body>
+<script>
+    function updateTime() {
+        const now = new Date();
+        const timeString = now.toLocaleTimeString();
+        document.getElementById("trainTime").textContent = timeString;
+    }
+
+    setInterval(updateTime, 1000);
+    updateTime();
+</script>
 
 </html>
