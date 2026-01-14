@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoPrime | Frequently Asked Questions</title>
+    <style>
+        :root {
+            --primary: #0b42ba;
+            --dark-bg: #0f172a;
+            --light-bg: #f1f5f9;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            width: 100%;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        h1 {
+            color: var(--dark-bg);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        details {
+            border-bottom: 1px solid #e2e8f0;
+            padding: 20px 0;
+            cursor: pointer;
+        }
+
+        summary {
+            font-weight: 600;
+            font-size: 1.1rem;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        summary::after {
+            content: '→';
+            color: var(--primary);
+            transition: transform 0.3s;
+        }
+
+        details[open] summary::after {
+            transform: rotate(90deg);
+        }
+
+        .answer {
+            padding-top: 15px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="faq-container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        <h1>Frequently Asked Questions</h1>
+        
+        <details>
+            <summary>How do I book a test drive?</summary>
+            <div class="answer">Select a car from the inventory and click "Book Test Drive" or use the Client Portal.</div>
+        </details>
+
+        <details>
+            <summary>Do you offer financing for used cars?</summary>
+            <div class="answer">Yes, we offer competitive financing options for both new and certified pre-owned vehicles.</div>
+        </details>
+
+        <details>
+            <summary>What is your return policy?</summary>
+            <div class="answer">We offer a 7-day or 500-mile money-back guarantee on all our certified vehicles.</div>
+        </details>
+    </div>
+</body>
+</html>
