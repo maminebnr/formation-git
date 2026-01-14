@@ -14,7 +14,7 @@ body { font-family: 'Inter', sans-serif; background: var(--light-bg); }
 .ga-navbar {
     height: var(--nav-h);
     background: var(--dark);
-    color: white;
+    color: rgb(187, 171, 171);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,14 +26,14 @@ body { font-family: 'Inter', sans-serif; background: var(--light-bg); }
 .ga-logo span { color: var(--primary); font-weight: bold; }
 .ga-nav-links { display: flex; list-style: none; gap: 30px; }
 .ga-nav-links a { color: #cbd5e1; text-decoration: none; font-size: 14px; }
-.ga-btn-login { background: var(--primary); color: white; border: none; padding: 8px 20px; border-radius: 5px; cursor: pointer; }
+.ga-btn-login { background: var(--primary); color: rgb(187, 171, 171); border: none; padding: 8px 20px; border-radius: 5px; cursor: pointer; }
 
 /* [GROUP A] SIDEBAR STYLES */
 .ga-layout-wrapper { display: flex; margin-top: var(--nav-h); }
 
 .ga-sidebar {
     width: var(--side-w);
-    background: white;
+    background: rgb(187, 171, 171);
     height: calc(100vh - var(--nav-h));
     position: fixed;
     border-right: 1px solid #e2e8f0;
@@ -44,7 +44,7 @@ body { font-family: 'Inter', sans-serif; background: var(--light-bg); }
 .ga-filter-item { margin-bottom: 20px; }
 .ga-filter-item label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 8px; }
 .ga-filter-item select, input[type="range"] { width: 100%; }
-.ga-filter-btn { width: 100%; background: var(--dark); color: white; border: none; padding: 10px; border-radius: 4px; cursor: pointer; }
+.ga-filter-btn { width: 100%; background: var(--dark); color: rgb(187, 171, 171); border: none; padding: 10px; border-radius: 4px; cursor: pointer; }
 
 /* MAIN CONTENT (Others work here) */
 .content-area {
