@@ -159,11 +159,6 @@ input[type="range"] {
 }
 
 .car-card p {
-<<<<<<< HEAD
-  padding: 10px;
-  font-weight: bold;
-  margin: 0;
-=======
     padding: 10px;
     font-weight: bold;
     margin: 0;
@@ -212,5 +207,4 @@ input[type="range"] {
     font-size: 14px;
     letter-spacing: 3px;
     opacity: 0.8;
->>>>>>> 461746954cd61b40588601e28ebe16ee140e98fb
 }
