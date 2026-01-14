@@ -1,0 +1,155 @@
+:root {
+  --primary: #00d4ff; /* Electric Blue */
+  --accent: #0052ff;
+  --bg-dark: #0a0c10;
+  --text-muted: #94a3b8;
+  --glass: rgba(255, 255, 255, 0.03);
+}
+
+.modern-footer {
+  background-color: var(--bg-dark);
+  color: #fff;
+  padding: 80px 5% 40px;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1fr;
+  gap: 60px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Brand Section */
+.logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 15px;
+}
+
+.logo span {
+  background: linear-gradient(to right, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-brand p {
+  color: var(--text-muted);
+  line-height: 1.6;
+  max-width: 300px;
+}
+
+/* Social Icons Glassmorphism */
+.social-glass {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.social-glass a {
+  width: 40px;
+  height: 40px;
+  background: var(--glass);
+  border: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-glass a:hover {
+  background: var(--primary);
+  transform: translateY(-3px);
+}
+
+/* Links Grid */
+.footer-links-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.link-group h4 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.link-group a {
+  display: block;
+  color: var(--text-muted);
+  text-decoration: none;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  transition: 0.2s;
+}
+
+.link-group a:hover {
+  color: var(--primary);
+}
+
+/* CTA Button Section */
+.btn-gradient {
+  background: linear-gradient(45deg, var(--primary), var(--accent));
+  border: none;
+  padding: 12px 25px;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Legal Section */
+.footer-legal {
+  max-width: 1300px;
+  margin: 60px auto 0;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  display: flex;
+  justify-content: space-between;
+  color: #475569;
+  font-size: 0.85rem;
+}
+
+.legal-links a {
+  color: #475569;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 1024px) {
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-cta {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .footer-links-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .footer-cta {
+    grid-column: span 1;
+  }
+  .footer-legal {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
