@@ -1,0 +1,48 @@
+/* GLOBAL STYLES - style.css */
+
+:root {
+    --primary-blue: #2563eb;
+    --dark-bg: #1e293b;
+    --light-bg: #f8fafc;
+    --text-main: #334155;
+    --nav-height: 70px;
+    --sidebar-width: 250px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--light-bg);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* Layout Wrapper */
+.main-container {
+    display: flex;
+    margin-top: var(--nav-height); /* Prevents content from hiding under the fixed navbar */
+}
+
+/* Main Content Area (Where Groups B, C, and D will work) */
+.content-area {
+    margin-left: var(--sidebar-width); /* Leaves room for Group A's sidebar */
+    padding: 40px;
+    width: 100%;
+    min-height: calc(100vh - var(--nav-height));
+    transition: margin-left 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ga-sidebar {
+        display: none; /* Hide sidebar on mobile */
+    }
+    .content-area {
+        margin-left: 0;
+    }
+}
